@@ -5,10 +5,8 @@ import Logo from "@/public/images/logo-no-border-center-800.png";
 import React from "react";
 import YouTube from "react-youtube";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
-export default function Hero() {
+export default function Truthify() {
   const videoOps = {
     height: "472",
     width: "840",
@@ -51,9 +49,9 @@ export default function Hero() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Hero content */}
+     
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-          {/* Section header */}
+       
           <div className="text-center">
             <Image
               className="mx-auto pb-12 md:pb-16"
@@ -65,16 +63,6 @@ export default function Hero() {
             />
           </div>
           <div className="text-center pb-12 md:pb-16">
-            <h1
-              className="text-4xl md:text-4xl font-extrabold leading-tighter tracking-tighter mb-4"
-              data-aos="zoom-y-out"
-            >
-              On-Chain{" "}
-              <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                Zero-Knowledge Proof Solution{" "}
-              </p>
-              to Fact-Checking
-            </h1>
 
             <div className="max-w-3xl mx-auto">
               <div
@@ -82,14 +70,6 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                <div>
-                  <Link
-                    className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="/more"
-                  >
-                    Learn More
-                  </Link>
-                </div>
                 <div>
                   <Link
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
@@ -103,42 +83,18 @@ export default function Hero() {
           </div>
 
           <div className="text-center pb-12 md:pb-16">
-            <div className="flex items-center justify-center mb-6 bg-gradient-to-r from-yellow-500 via-red-600 to-yellow-500">
-              <div className="flex items-center justify-center p-2">
-                <FontAwesomeIcon
-                  icon={faTrophy}
-                  className="text-white text-2xl mr-2"
-                />
-                <h2 className="text-2xl text-white">
-                  Awarded the <span className=" font-bold">first prize</span> in
-                  Application Track at the{" "}
-                  <a
-                    href="https://zk-hacking.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline"
-                  >
-                    ZKP Hackathon 2023
-                  </a>
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          {/* Hero image */}
-          <div className="text-center pb-12 md:pb-16">
             <h4
               className="text-3xl md:text-3xl font-extrabold leading-tighter tracking-tighter mb-3"
               data-aos="zoom-y-out"
             >
-              Watch our 100-second project presentation video below.
+              Watch Truthify Live
             </h4>
             <div
               className="relative flex justify-center mb-8"
               data-aos="zoom-y-out"
               data-aos-delay="450"
             >
-              <YouTube videoId="bJEQLIkd0Zs" opts={videoOps} />
+              <YouTube videoId="" opts={videoOps} />{/** add videoId here */}
             </div>
           </div>
         </div>

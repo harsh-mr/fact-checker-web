@@ -10,7 +10,6 @@
 @import 'additional-styles/people.css';
 @import 'tailwindcss/utilities';
 
-/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 
 @layer utilities {
     .rtl {
