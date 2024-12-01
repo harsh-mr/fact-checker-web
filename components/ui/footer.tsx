@@ -28,7 +28,7 @@ export default function Footer() {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
-            &copy; Piergiuseppe Mallozzi. Guillaume Lethuillier{" "}
+            &copy; Shreya Narayan{" "}
           </div>
         </div>
       </div>
