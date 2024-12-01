@@ -28,7 +28,7 @@ export default function NoServer() {
         >
           To get started, refer to the instructions
           <Link
-            href="https://github.com/pierg/fact-fortress-dapp"
+            href="https://github.com/Shreya23-tech/truthify-dapp"
             legacyBehavior={true}
           >
             <a className="text-blue-500 hover:text-blue-600"> on GitHub. </a>

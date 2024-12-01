@@ -11,7 +11,7 @@ export default function Footer() {
             <div></div>
             <div className="ml-4">
               <a
-                href="https://github.com/pierg/fact-fortress-dapp"
+                href="https://github.com/Shreya23-tech/truthify-dapp"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Github"
               >

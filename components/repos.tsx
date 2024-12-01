@@ -16,7 +16,7 @@ export default function ReposBlocks() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Fact Fortress DAPP</h2>
             <Link
-              href="https://github.com/pierg/fact-fortress-dapp"
+              href="https://github.com/Shreya23-tech/truthify-dapp"
               rel="noopener noreferrer"
               target="_blank"
               className="h3 text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"

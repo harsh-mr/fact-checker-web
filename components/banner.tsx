@@ -13,7 +13,7 @@ export default function Banner() {
             <div className="text-slate-500 inline-flex">
               <a
                 className="font-medium hover:underline text-slate-50"
-                href="https://github.com/pierg/fact-fortress-dapp"
+                href="https://github.com/Shreya23-tech/truthify-dapp"
                 target="_blank"
                 rel="noreferrer"
               >

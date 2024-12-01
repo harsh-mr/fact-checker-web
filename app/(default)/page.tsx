@@ -4,7 +4,7 @@ export const metadata = {
   description: "Page description",
 };
 
-import FactFortress from "@/components/fact-fortress";
+import FactFortress from "@/components/truthify";
 import Hero from "@/components/hero-fortress";
 
 export default function Home() {

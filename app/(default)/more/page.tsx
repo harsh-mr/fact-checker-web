@@ -110,7 +110,7 @@ export default function More() {
                   <div className="max-w-3xl mx-auto">
                     <p className="text-xl text-gray-600">
                       <Link
-                        href="https://github.com/pierg/fact-fortress-dapp"
+                        href="https://github.com/Shreya23-tech/truthify-dapp"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="h4 text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
@@ -122,7 +122,7 @@ export default function More() {
                   <div className="max-w-3xl mx-auto">
                     <p className="text-xl text-gray-600">
                       <Link
-                        href="https://github.com/pierg/fact-fortress-compiler"
+                        href="https://github.com/Shreya23-tech/truthify-compiler"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="h4 text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
@@ -134,7 +134,7 @@ export default function More() {
                   <div className="max-w-3xl mx-auto">
                     <p className="text-xl text-gray-600">
                       <Link
-                        href="https://github.com/pierg/fact-fortress-web"
+                        href="https://github.com/Shreya23-tech/truthify-web"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="h4 text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
