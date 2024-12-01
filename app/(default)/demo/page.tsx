@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Demo from './components/Demo';
 
 export const metadata = {
   title: "Truthify — Demo",
