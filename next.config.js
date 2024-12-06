@@ -6,6 +6,6 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/fact-fortress-web' : '',
-  assetPrefix: isProd ? '/fact-fortress-web' : '',
+  basePath: isProd ? '/truthify-web' : '',
+  assetPrefix: isProd ? '/truthify-web' : '',
 }

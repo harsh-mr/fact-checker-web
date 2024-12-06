@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logoSvg from "@/public/images/logo-svg.svg";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 export default function Logo() {
   // const { basePath } = useRouter();
