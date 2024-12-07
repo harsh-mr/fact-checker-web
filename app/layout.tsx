@@ -20,12 +20,14 @@ export const metadata = {
   description: "Zero-Knowledge Proof Framework for Verifiable Fact-Checking",
 };
 
-const cookies = headers().get("cookie");
+export const dynamic = 'force-static'
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookies = headers().get("cookie");
   return (
     <html lang="en">
       <body
