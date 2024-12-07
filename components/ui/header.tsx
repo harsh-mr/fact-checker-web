@@ -39,18 +39,6 @@ function Navbar({ className }: { className?: string }) {
               src="https://storage.googleapis.com/media-newsinitiative/images/GoogleFactCheckTools.original.jpg"
               description="Demo the Fact Checker Dapp"
             />
-            <ProductItem
-              title="Dapp"
-              href="https://github.com/harsh-mr/fact-checker-dapp"
-              src="https://github.blog/wp-content/uploads/2023/10/Collaboration-DarkMode-2.png?resize=1200%2C630"
-              description="Checkout the Fact Checker Dapp Codebase"
-            />
-            <ProductItem
-              title="Frontend"
-              href="https://github.com/harsh-mr/fact-checker-web"
-              src="https://github.blog/wp-content/uploads/2023/10/Collaboration-DarkMode-2.png?resize=1200%2C630"
-              description="Checkout the Fact Checker Web Codebase"
-            />
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Docs">
