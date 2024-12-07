@@ -450,7 +450,22 @@ export default function Dapp() {
                     pagination={{ position: [] }}
                   />
                 </Form.Item>
-                {/* ... rest of the existing code ... */}
+                <Button block type='primary' onClick={handleGenerate} disabled={(JSON.stringify(computeRes) == '{}' || JSON.stringify(dataRes) == '{}')}>Generate Proof!</Button>
+              <Divider type='horizontal' />
+              <div id="myqrcode">
+                  {loading && 
+                    <Card loading={loading}>None</Card>
+                  }
+                  {done && 
+                  <div>
+                    <TextArea rows={6} style={{ color: 'black'}}  defaultValue={createJSON()} disabled={true} />
+                    <Button type="primary" onClick={exportToJson} style={{marginTop: 10}}>
+                      Download Proof
+                    </Button>
+                    <p/>
+                  </div>
+                  }
+              </div>
               </Form>
             </Space>
           </Card>
