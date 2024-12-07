@@ -1,66 +1,64 @@
 "use client";
-
-import { useState, useEffect } from "react";
-
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
+import { cn } from "../lib/utils";
+import { useAccount } from "wagmi"
 import Link from "next/link";
-import Logo from "./logo";
-import MobileMenu from "./mobile-menu";
 
 export default function Header() {
-  const [top, setTop] = useState<boolean>(true);
+  return (
+    <div className="relative w-full h-0">
+      <Navbar className="" />
+    </div>
+  );
+}
 
-  // detect whether user has scrolled the page down by 10px
-  const scrollHandler = () => {
-    window.pageYOffset > 10 ? setTop(false) : setTop(true);
-  };
-
-  useEffect(() => {
-    scrollHandler();
-    window.addEventListener("scroll", scrollHandler);
-    return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]);
+function Navbar({ className }: { className?: string }) {
+  const [active, setActive] = useState<string | null>(null);
+  const { isConnected } = useAccount();
 
   return (
-    <header
-      className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-        !top ? "bg-white backdrop-blur-sm shadow-lg" : ""
-      }`}
+    <div
+      className={cn("z-50", className)} // Adjusted width
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Site branding */}
-          <div className="shrink-0 mr-4">
-            <Logo />
+      <Menu setActive={setActive}>
+        <Link href="/" className="cursor-pointer mr-auto">
+          <MenuItem
+            setActive={setActive}
+            active={null}
+            item="Home"
+          ></MenuItem>
+        </Link>
+        <w3m-button/>
+        <w3m-network-button/>
+        <MenuItem setActive={setActive} active={active} item="Demo">
+          <div className="text-sm grid grid-cols-1 gap-10 p-4">
+            <ProductItem
+              title="Demo"
+              href="/demo"
+              src="https://storage.googleapis.com/media-newsinitiative/images/GoogleFactCheckTools.original.jpg"
+              description="Demo the Fact Checker Dapp"
+            />
+            <ProductItem
+              title="Dapp"
+              href="https://github.com/harsh-mr/fact-checker-dapp"
+              src="https://github.blog/wp-content/uploads/2023/10/Collaboration-DarkMode-2.png?resize=1200%2C630"
+              description="Checkout the Fact Checker Dapp Codebase"
+            />
+            <ProductItem
+              title="Frontend"
+              href="https://github.com/harsh-mr/fact-checker-web"
+              src="https://github.blog/wp-content/uploads/2023/10/Collaboration-DarkMode-2.png?resize=1200%2C630"
+              description="Checkout the Fact Checker Web Codebase"
+            />
           </div>
-
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
-            {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link
-                  href="/demo"
-                  className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
-                >
-                  <span>Demo</span>
-                  <svg
-                    className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1"
-                    viewBox="0 0 12 12"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                      fillRule="nonzero"
-                    />
-                  </svg>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <MobileMenu />
-        </div>
-      </div>
-    </header>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Docs">
+          <div className="flex flex-col space-y-4 text-md">
+            <HoveredLink href="/more">Learn More</HoveredLink>
+          </div>
+        </MenuItem>
+      </Menu>
+    </div>
   );
 }

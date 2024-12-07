@@ -1,15 +1,14 @@
 export const metadata = {
   title:
-    "Truthify",
+    "Fact Checker — Zero-Knowledge Proof Framework for Verifiable Fact-Checking",
   description: "Page description",
 };
-
-import Truthify from "@/components/main-truthify";
+import Hero from "@/components/hero-checker";
 
 export default function Home() {
   return (
     <>
-      <Truthify />
+      <Hero />
     </>
   );
 }

@@ -304,9 +304,6 @@ export default function Dapp() {
                       Download Proof
                     </Button>
                     <p/>
-                    <div style={{ display: "flex", gap: "10px", width: '100%' }}>
-                    <QRCode value={qrCode} />
-                    </div>
                   </div>
                   }
               </div>
