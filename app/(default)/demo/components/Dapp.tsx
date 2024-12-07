@@ -303,7 +303,7 @@ export default function Dapp() {
                     <Button type="primary" onClick={exportToJson} style={{marginTop: 10}}>
                       Download Proof
                     </Button>
-                    <p/>nv
+                    <p/>
                   </div>
                   }
               </div>

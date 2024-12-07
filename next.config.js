@@ -6,6 +6,6 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/truthify-web' : '',
-  assetPrefix: isProd ? '/truthify-web' : '',
+  basePath: isProd ? '/factChcker-web' : '',
+  assetPrefix: isProd ? '/factChecker-web' : '',
 }
